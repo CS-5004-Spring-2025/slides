@@ -71,3 +71,21 @@ Syllabus Review
 ---
 
 Hello, World!
+
+---
+
+Setting up your environment
+
+---
+
+<img src = 'slido.png'/>
+
+---
+
+# Tools we'll use
+
+- IntelliJ (or VS code, or another IDE)
+- git
+- gradle
+- checkstyle
+

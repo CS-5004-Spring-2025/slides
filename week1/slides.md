@@ -78,6 +78,8 @@ Setting up your environment
 
 ---
 
+<!-- .slide: data-background-color="white" -->
+
 <img src = 'slido.png'/>
 
 ---
@@ -89,3 +91,12 @@ Setting up your environment
 - gradle
 - checkstyle
 
+---
+
+# gradle
+
+- Build tool
+- One step build/test of your project
+- For now, helps with auto-grading tests
+- Later, helps manage dependencies 
+- 

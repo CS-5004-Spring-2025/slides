@@ -179,10 +179,10 @@ Setting up your environment
 - Packages
 - Variable declaration
 - Method declaration
-- Javadoc
 - `this` keyword
 - Object instantiation
 - Unit tests
+- Javadoc
 
 ---
 
@@ -205,3 +205,71 @@ int x;
 int y = 15;
 String className = "CS 5004";
 ```
+
+---
+
+## Data members
+
+- Variables associated with an object
+- Include *access modifier*
+
+```java
+private String make;
+```
+
+---
+
+## Methods
+
+- Operations to be performed on an object.
+- Method header:
+  * access_modifier return_type name(params) 
+- Parameters are `type name` and comma separated
+
+```java
+public String getMake() {
+
+
+}
+```
+
+---
+
+# `this` keyword
+
+- Used to refer to the data member associated with the object
+- Like `self`!
+- Unlike `self` it doesn't need to be specified if there is no variable with the
+  same name in the local scope
+
+---
+
+## Object instantiation and calling methods
+
+- Invoke the constructor to create a new instance of the class
+- type name = `new` type(actual_parameters)
+- object_name.method_name(parameters)
+
+```java
+Car c = new Car("Smart", "forTwo", 2016);
+c.getMake();
+c.drive(50);
+```
+
+---
+
+## Unit tests
+
+- Ensure that one small piece, e.g., a method, of your program works as expected
+- Classes in test/java
+- We'll use the JUnit 5 library
+
+```java
+@Test // annotation that indicates this is a test method
+public void testGetItem() { // looks like a regular method
+  InventoryItem ii = new InventoryItem("Apples", 10);
+  assertEquals("Apples", ii.getItem()); // assertEquals(expected, actual)
+}
+```
+
+

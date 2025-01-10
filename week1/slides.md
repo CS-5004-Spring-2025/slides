@@ -183,3 +183,25 @@ Setting up your environment
 - `this` keyword
 - Object instantiation
 - Unit tests
+
+---
+
+## Packages
+
+- Group classes with similar functionality
+- In many place, must use *fully qualified* class name
+  * `car.CarDriver`
+
+---
+
+## Variables
+
+- Must specify *type*
+- There are **eight** *primitive* types
+- `String` is an object type
+
+```java
+int x;
+int y = 15;
+String className = "CS 5004";
+```

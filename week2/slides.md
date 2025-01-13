@@ -7,6 +7,11 @@
 ## Week 2 - Agenda part 1
 
 - Quiz on Friday!
+    * Design
+    * Testing
+    * Types 
+    * Syntax
+    * Methods
 - Conditionals and Iteration
 - Collections part 1 (Lists and ArrayList)
 - Exceptions

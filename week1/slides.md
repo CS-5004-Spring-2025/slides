@@ -184,6 +184,14 @@ Setting up your environment
 - Unit tests
 - Javadoc
 
+
+---
+
+## Classes
+
+- Group together data and methods
+- A program is a set of objects interacting
+
 ---
 
 ## Packages

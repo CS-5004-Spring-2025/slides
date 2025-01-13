@@ -76,15 +76,21 @@ for (INITIALIZATION; CONDITION; UPDATE) {
 ```
 ---
 
-## Iteration - foreach
+## Iteration - enhanced for
+
+Enhanced for loop or for-each loop
 
 ```java
 
-for (TYPE NAME: COLLECTION) {
+for (TYPE NAME: ITERABLE) {
 
 }
 
 ```
+
+---
+
+<img height=600px src="https://ih1.redbubble.net/image.307874987.8434/flat,750x,075,f-pad,750x1000,f8f8f8.u3.jpg"/>
 
 ---
 
@@ -112,18 +118,26 @@ for (TYPE NAME: COLLECTION) {
 
 ```java
 List<String> names = new ArrayList<String>();
-
 ```
 
+- Must use object types in pointy brackets
+- Use primitive type wrappers, e.g., `Integer`
+
 ---
+
+<img height=600px src="https://www.memecreator.org/static/images/memes/5466706.jpg"/>
+
+---
+
 
 ## Exceptions 
 
 - Generated under error conditions
 - In Java, there are *checked* and *unchecked* exceptions
+  * Checked *must* be caught
+  * Try to *avoid* unchecked
 - Unchecked e.g. divide by zero, arrayindexoutofbounds
 - Checked e.g., filenotfound
-
 
 ---
 
@@ -211,3 +225,52 @@ public void readFile(String fileName) throws FileNotFoundException {
 ```java
 throw new ExceptionType("message...");
 ```
+
+---
+
+<img height=600px src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznfwPxsx0OxLaD11ixVY_W2DQgfVG6mEBLA&s"/>
+
+---
+
+# static
+
+- Allocated memory space only once
+- Accessible without object instantiation
+- Associated with the class, not objects
+- Cannot access non-static members
+- Cannot be overridden
+
+*https://www.geeksforgeeks.org/static-keyword-java/*
+
+---
+
+## static - rules of thumb
+
+- **Do not** make things static because your IDE recommends it!
+- Static methods generally standalone
+  * Operate only on parameters and save no state
+- Static data shared across all objects!
+
+---
+
+## Example: `Math`
+
+[`Math` API](https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/Math.html)
+
+
+```java
+Math.abs(-4.5);
+```
+
+*Note: method is called using classname.*
+
+---
+
+## static Data Members
+
+- Constants
+- Number of instances created
+
+---
+
+<img height=600px src="https://europe1.discourse-cdn.com/arduino/optimized/4X/c/f/3/cf3c7aa57676663791370a60b173e6a3c8c9f124_2_669x500.jpeg"/>

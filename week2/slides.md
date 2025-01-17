@@ -237,6 +237,14 @@ throw new ExceptionType("message...");
 
 ---
 
+## == vs .equals
+
+- `==` used for primitive types and to compare references
+- `.equals` compares object *values*
+- You must implement `.equals`!
+
+---
+
 # static
 
 - Allocated memory space only once

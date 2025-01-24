@@ -15,6 +15,128 @@
 
 ---
 
+## Library Management System
+
+- Maintain a collection of items that can be loaned out
+  * can be books or magazines
+  * could also be media, tools...
+- Check out individual publications
+- View all available publications
+
+---
+
+## Design
+
+- Need basic functionality
+  * whether it is checked out
+- Books and magazines have a title
+- Books have an author name (magazines don't have one author)
+- Magazines have a volume
+- LPs have an artist
+
+---
+
+## Interfaces
+
+- Specify behavior (methods) but not implementation
+- Could have a `LibraryItem` *interface*
+  * check out
+  * return
+
+```java
+public interface LibraryItem {
+
+    boolean checkoutItem();
+
+    boolean returnItem();
+
+}
+
+```
+
+---
+
+## Abstract classes
+
+- Cannot be *instantiated*
+- Could have a `Publication` abstract class
+  * title
+- Cannot create a generic publication -- must be Book or Magazine
+- Provide some behavior but not all
+
+---
+
+## Concrete classes
+
+- Can *implement* multiple interfaces
+- Can *extend* one other class
+- All abstract methods from ancestor classes must be implemented.
+
+```java
+public class Book extends Publication {
+
+}
+```
+
+---
+
+## Method overriding
+
+- A method in parent class A may be implemented a different way in child class B.
+- B may *partially override* the method by using `super.` to invoke the parent
+  class version.
+
+```
+abstract class A
+- m1
+- m2
+
+class B extends A
+- m2
+- m3
+
+```
+
+---
+
+Which statement(s) generate a compiler error?
+
+```java
+A a = new A();
+B b = new B();
+A a = new B();
+B b = new A();
+```
+
+---
+
+
+## Dynamic dispatch
+
+- The "version" of the method that gets called depends on the type of the object
+  not the type of the reference.
+
+
+---
+
+Which statement(s) generate a compiler error? What is the result of the valid statements?
+
+```java
+A a = new B();
+a.m1() 
+a.m2() 
+a.m3()
+```
+
+```java
+B b = new B();
+b.m1() 
+b.m2() 
+b.m3()
+```
+
+---
+
 ## `enum`
 
 - Represents a fixed set of constants
@@ -93,49 +215,4 @@ return switch (rank) {
   * [Baeldung Post](https://www.baeldung.com/java-record-keyword)
   * [Oracle Docs](https://docs.oracle.com/en/java/javase/16/language/records.html)
 
----
-
-## Library Management System
-
-- Maintain a collection of items that can be loaned out
-  * can be books or magazines
-  * could also be media, tools...
-- Check out individual publications
-- View all available publications
-
----
-
-## Design
-
-- Need basic functionality
-  * whether it is checked out
-- Books and magazines have a title
-- Books have an author name (magazines don't have one author)
-- Magazines have a volume
-- LPs have an artist
-
----
-
-## Interfaces
-
-- Specify behavior (methods) but not implementation
-- Could have a `LibraryItem` *interface*
-  * check out
-  * return
-
----
-
-## Abstract classes
-
-- Cannot be *instantiated*
-- Provide some behavior but not all
-- Could have a `Publication` abstract class
-  * title
-
----
-
-## Concrete classes
-
-- Can *implement* multiple interfaces
-- Can *extend* one other class
 

@@ -219,3 +219,51 @@ return result.getFirst().checkoutItem();
   specific application? 
 - Books may be naturally compared using title, but a separate comparator may
   provide the ability to sort by author name
+
+---
+
+## Map
+
+- Maps key to value
+
+```java
+public Map<String, List<Book>> booksByAuthor() {
+    Map<String, List<Book>> result = new HashMap<>();
+    for (LibraryItem item : items) {
+        if (item instanceof Book b) {
+            List<Book> books = result.get(b.getAuthor());
+            if (books == null) {
+                books = new ArrayList<>();
+            }
+            books.add(b);
+            result.put(b.getAuthor(), books);
+        }
+    }
+}
+
+```
+
+---
+
+## ...better...
+
+```java
+// The List is a reference!
+if (item instanceof Book b) {
+    result.computeIfAbsent(b.getAuthor(), k -> new ArrayList<>()).add(b);
+}
+```
+
+---
+
+## But also
+
+```java
+Map<String, List<Book>> result =
+        items.stream()
+                .filter(Book.class::isInstance)
+                .map(Book.class::cast)
+                .collect(Collectors.groupingBy(Book::getAuthor));
+return result;
+
+```

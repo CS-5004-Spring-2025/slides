@@ -227,7 +227,7 @@ return result.getFirst().checkoutItem();
 - Maps key to value
 
 ```java
-public Map<String, List<Book>> booksByAuthor() {
+public Map<String, List<Book>> $$booksByAuthor() {
     Map<String, List<Book>> result = new HashMap<>();
     for (LibraryItem item : items) {
         if (item instanceof Book b) {
@@ -258,7 +258,9 @@ if (item instanceof Book b) {
 
 ## But also
 
-```java
+```java$$
+
+$$
 Map<String, List<Book>> result =
         items.stream()
                 .filter(Book.class::isInstance)

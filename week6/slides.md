@@ -77,7 +77,7 @@ public interface CS5004SortedList<T extends Comparable<T>> {
 - We can create a CS5004SortedList of anything, but generics allows us to
   enforce it be one particular thing for a given instantiation. 
 
---- 
+---
 
 ## Let's use TDD!
 

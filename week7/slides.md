@@ -25,19 +25,19 @@
   * Interface Segregation Principle
   * Dependency Inversion Principle
 
-
 ---
 
 ## SOLID resources
 
 - [Clean Architecture](https://learning.oreilly.com/library/view/clean-architecture-a/9780134494272/part3.xhtml)
 - [Examples used here](https://medium.com/@cibofdevs/understanding-solid-principles-in-java-with-real-life-examples-d6fe93b0acc2)
+- [Amigos Code](https://youtu.be/_jDNAf3CzeY?si=seFx2BjYPeCNYDv5)
 - [Barbara Liskov](https://medium.com/@cibofdevs/understanding-solid-principles-in-java-with-real-life-examples-d6fe93b0acc2)
 
 ---
 
 ## S: Single Responsibility
-
+  
 ### A module should be responsible to one, and only one, actor.
 
 ---

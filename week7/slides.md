@@ -4,6 +4,16 @@
 
 ---
 
+## Announcements
+
+- Field trip tomorrow
+- Dean visit on Thursday
+- Roy Chen talk on Friday
+- Lunch and Learn on Monday
+- Project resubmission instructions
+
+---
+
 ## Week 7
 
 - Lecture Thursday, guest on Friday

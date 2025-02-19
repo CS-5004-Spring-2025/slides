@@ -42,7 +42,7 @@
 - [Clean Architecture](https://learning.oreilly.com/library/view/clean-architecture-a/9780134494272/part3.xhtml)
 - [Examples used here](https://medium.com/@cibofdevs/understanding-solid-principles-in-java-with-real-life-examples-d6fe93b0acc2)
 - [Amigos Code](https://youtu.be/_jDNAf3CzeY?si=seFx2BjYPeCNYDv5)
-- [Barbara Liskov](https://medium.com/@cibofdevs/understanding-solid-principles-in-java-with-real-life-examples-d6fe93b0acc2)
+- [Barbara Liskov](https://youtu.be/-Z-17h3jG0A)
 
 ---
 
@@ -236,7 +236,7 @@ public class MultiFunctionPrinter implements Printer, Scanner, Fax {
 ## JSON Parsing
 
 - There are many Java libraries you can use for parsing JSON.
-- [https://www.baeldung.com/java-json](https://www.baeldung.com/java-json
+- [https://www.baeldung.com/java-json](https://www.baeldung.com/java-json)
 - I'll demo [Jackson](https://github.com/FasterXML/jackson)
 
 ---

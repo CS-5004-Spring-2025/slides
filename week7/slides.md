@@ -335,6 +335,16 @@ for (JsonNode task : node.get("tasks")) {
 
 ---
 
+## Week 8
+
+- Today: collections Framework
+- Thursday: peer design review Lab 7
+    * available Thursday 4pm, due Friday 11:59pm
+- Friday: CPA session at 10am (register!)
+- Friday: quiz (no in-person meeting)
+
+---
+
 ## Java Collections Framework
 
 <img src="collections.png"/>

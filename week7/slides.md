@@ -367,7 +367,36 @@ for (JsonNode task : node.get("tasks")) {
 - Consider the Library example
 - Assume a method to get all items sorted by ID
 - Which option is best?
-  * Manually insert new items in sorted order
-  * When the method is called, sort the list
-  * Use a TreeSet and sort by ID
+  1. Manually insert new items in sorted order
+  2. When the method is called, sort the list
+  3. Use a TreeSet and sort by ID
 
+---
+
+## Design Exercise - 2
+
+- An *inverted index* maps a word to a list of documents (or web pages) containing that word. 
+- Design a data structure to maintain an inverted index
+  * Consider whether sets or sorted data structures would be helpful
+
+---
+
+## Design Exercise - 3
+
+- Design a social media feed to support the following operations:
+
+  * postMessage(userId, msgId)
+  * getNewsFeed(userId) (returns most recent msgs from followed users)
+  * follow(followerId, followeeId)
+  * unfollow(followerId, followeeId)
+
+---
+
+## Source code Exercise
+
+- Spend a few minutes browsing the source code for the [jackson library
+  data-bind
+  package](https://github.com/FasterXML/jackson-databind/tree/39ac2b668382cf6c28f1b554530d1d93406cf080/src/main/java/com/fasterxml/jackson/databind).
+  Pay particular attention to the JsonNode and ObjectNode classes
+- How is the tree structure implemented in this library?
+- Why do you think that decision was made?

@@ -75,6 +75,36 @@
 
 ---
 
+## Project 3 Notes
+
+- Jar files
+- Returning multiple items
+
+---
+
+## Jar files
+
+- Recall, java files get compiled into class files
+- If you build a library you want to allow others to use, you want to hand off
+  your class files
+- Class files get packaged together in a *jar* file, like a zip file
+
+---
+
+## Running a program relying on a jar
+
+- Option 1: add the jar to your classpath
+- Option 2: create a "fat jar" for your program including dependencies
+
+---
+
+## Returning multiple items
+
+- Avoid `Object` in pretty much all cases
+- Create a specialized type!
+
+---
+
 ## Tic Tac Toe
 
 - Let's play!

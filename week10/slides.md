@@ -90,5 +90,3 @@ tradeoffs to reflect the new reality.*
 - Temporary Field
   * A field set in only some circumstances
 - Large Classes
-
----

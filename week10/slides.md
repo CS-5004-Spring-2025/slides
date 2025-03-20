@@ -78,7 +78,7 @@ tradeoffs to reflect the new reality.*
   * Indicates a violation of SRP
 - Shotgun Surgery
   * A change in one place requires a bunch of other small changes
-  
+
 ---
 
 ## Code smells
@@ -90,3 +90,5 @@ tradeoffs to reflect the new reality.*
 - Temporary Field
   * A field set in only some circumstances
 - Large Classes
+
+---

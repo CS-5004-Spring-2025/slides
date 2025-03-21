@@ -6,6 +6,10 @@
 
 ## Week 10
 
+- Next week
+  * Tuesday - panel in NSB 215
+  * Thursday - Interactive grading 
+
 - Refactoring and code smells
 
 *Much of this material comes from Refactoring: Improving the Design of Existing
@@ -23,8 +27,7 @@ observable behavior.*
 
 ## When to refactor
 
-*The Rule of Three:
-Here's a guideline Don Roberts gave me: The first time you do something, you just do it. The second time you do something similar, you wince at the duplication, but you do the duplicate thing anyway. The third time you do something similar, you refactor.*
+*The Rule of Three: The first time you do something, you just do it. The second time you do something similar, you wince at the duplication, but you do the duplicate thing anyway. The third time you do something similar, you refactor.*
 
 ---
 
@@ -66,6 +69,7 @@ tradeoffs to reflect the new reality.*
 - Long Parameter List
     * Data Clumps
 - Global Data/Mutable Data
+    * Avoid references to mutable data
 - Large Class
 - Dead Code
 

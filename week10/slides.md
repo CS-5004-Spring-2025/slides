@@ -64,9 +64,9 @@ tradeoffs to reflect the new reality.*
 ## Code smells
 
 - Mysterious Name
-- Duplicated Code
+- Duplicated Code *
 - Long Function
-- Long Parameter List
+- Long Parameter List *
     * Data Clumps
 - Global Data/Mutable Data
     * Avoid references to mutable data
@@ -77,11 +77,23 @@ tradeoffs to reflect the new reality.*
 
 ## Code smells
 
-- Divergent Change
+- Divergent Change *
   * A module is often changed for different reasons
   * Indicates a violation of SRP
-- Shotgun Surgery
+- User class
+  * first_name, last_name
+  * street_address, city, state
+  * list of saved credit cards
+
+---
+
+## Code smells
+
+- Shotgun Surgery *
   * A change in one place requires a bunch of other small changes
+- Bank account
+  * withdraw -- if balance < MIN
+  * transfer -- if balance < MIN
 
 ---
 
@@ -93,4 +105,3 @@ tradeoffs to reflect the new reality.*
   * YAGNI
 - Temporary Field
   * A field set in only some circumstances
-- Large Classes
